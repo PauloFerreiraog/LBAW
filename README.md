@@ -5,6 +5,8 @@ O objetivo principal desse projeto é criação de um programa web semelhante a 
 
 Project Video Demo: https://youtu.be/msSi0tIFyBo
 
+For Full Proejct details check the Wiki
+
 Bianca Mota - up201800169@up.pt  
 Pedro Pereira - up201905508@up.pt
 Paulo Ferreira - 201804977@up.pt
