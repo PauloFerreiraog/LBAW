@@ -1,0 +1,530 @@
+body {
+  background-color: #0004ff;
+  color: black;
+}
+/*css group chat*/
+.txt:hover {
+  text-decoration: underline;
+}
+body{
+  background-color: #f4f7f6;
+  margin-top:20px;
+}
+
+.avatar {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.avatar:hover {
+	opacity: .5;
+}
+
+
+.card {
+  background: #fff;
+  transition: .5s;
+  border: 0;
+  margin-bottom: 30px;
+  border-radius: .55rem;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+.chat-app .people-list {
+  width: 280px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  z-index: 7
+}
+
+.chat-app .chat {
+  margin-left: 280px;
+  border-left: 1px solid #eaeaea
+}
+
+.people-list {
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s
+}
+
+.people-list .chat-list li {
+  padding: 10px 15px;
+  list-style: none;
+  border-radius: 3px
+}
+
+.people-list .chat-list li:hover {
+  background: #efefef;
+  cursor: pointer
+}
+
+.people-list .chat-list li.active {
+  background: #efefef
+}
+
+.people-list .chat-list li .name {
+  font-size: 15px
+}
+
+.people-list .chat-list img {
+  width: 45px;
+  border-radius: 50%
+}
+
+.people-list img {
+  float: left;
+  border-radius: 50%
+}
+
+.people-list .about {
+  float: left;
+  padding-left: 8px
+}
+
+.chat .chat-header {
+  padding: 15px 20px;
+  border-bottom: 2px solid #f4f7f6
+}
+
+.chat .chat-header img {
+  float: left;
+  border-radius: 40px;
+  width: 120px
+}
+
+.chat .chat-header .chat-about {
+  float: left;
+  padding-left: 10px
+}
+
+.chat .chat-history {
+  padding: 20px;
+  border-bottom: 2px solid #fff
+}
+
+.chat .chat-history ul {
+  padding: 0
+}
+
+.chat .chat-history ul li {
+  list-style: none;
+  margin-bottom: 30px
+}
+
+.chat .chat-history ul li:last-child {
+  margin-bottom: 0px
+}
+
+.chat .chat-history .message-data {
+  margin-bottom: 15px
+}
+
+.chat .chat-history .message-data img {
+  border-radius: 40px;
+  width: 40px
+}
+
+.chat .chat-history .message-data-time {
+  color: #434651;
+  padding-left: 6px
+}
+
+.chat .chat-history .message {
+  color: #444;
+  padding: 18px 20px;
+  line-height: 26px;
+  font-size: 16px;
+  border-radius: 7px;
+  display: inline-block;
+  position: relative
+}
+
+.chat .chat-history .message:after {
+  bottom: 100%;
+  left: 7%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #fff;
+  border-width: 10px;
+  margin-left: -10px
+}
+
+.chat .chat-history .my-message {
+  background: #efefef
+}
+
+.chat .chat-history .my-message:after {
+  bottom: 100%;
+  left: 30px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: #efefef;
+  border-width: 10px;
+  margin-left: -10px
+}
+
+.chat .chat-history .other-message {
+  background: #e8f1f3;
+  text-align: right
+}
+
+.chat .chat-history .other-message:after {
+  border-bottom-color: #e8f1f3;
+  left: 93%
+}
+
+.chat .chat-message {
+  padding: 20px
+}
+
+
+.float-right {
+  float: right
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0
+}
+
+.chat-history{
+  overflow-x: auto;
+  overflow-y: auto
+}
+
+@media only screen and (max-width: 767px) {
+  .chat-app .people-list {
+      height: 465px;
+      width: 100%;
+      overflow-x: auto;
+      background: #fff;
+      left: -400px;
+      display: none
+  }
+  .chat-app .people-list.open {
+      left: 0
+  }
+  .chat-app .chat {
+      margin: 0
+  }
+  .chat-app .chat .chat-header {
+      border-radius: 0.55rem 0.55rem 0 0
+  }
+  .chat-app .chat-history {
+      height: 300px;
+      
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .chat-app .chat-list {
+      height: 650px;
+     
+  }
+  .chat-app .chat-history {
+      height: 600px;
+      
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 2000000px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .chat-app .chat-list {
+      height: 480px;
+      overflow-x: auto;
+  }
+  .chat-app .chat-history {
+      height: calc(100vh - 350px);
+      overflow-x: auto;
+  }
+
+}
+
+
+/*fim css group chat*/
+
+main > header {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  padding: 1em;
+  margin: 1em;
+}
+main > header h1 {
+  margin: 0;
+}
+main > header a.button {
+  margin: 1em;
+  justify-self: center;
+}
+main > header span {
+  margin: 1em;
+  justify-self: center;
+}
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#cards article.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #d3edc3;
+  padding: 1em;
+  margin: 1em;
+}
+#cards article.card header {
+  display: flex;
+  align-items: center;
+}
+#cards article.card header h2 {
+  flex-grow: 1;
+}
+#cards article.card header a.delete {
+  display: none;
+  font-size: 2.6rem;
+  margin-top: .5rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.25;
+}
+#cards article.card header:hover a.delete {
+  display: inline;
+}
+#cards article.card li {
+  list-style-type: none;
+}
+#cards article.card li label {
+  display: flex;
+  align-items: baseline;
+}
+#cards article.card li label span {
+  margin-left: .5em;
+  flex-grow: 1;
+}
+#cards article.card li label a {
+  display: none;
+}
+#cards article.card li label:hover a {
+  display: inline;
+}
+#cards article.card input:checked + span {
+  text-decoration: var(--primary-color) solid line-through;
+}
+#cards article.card ul {
+  margin: 0;
+}
+#cards article.card form {
+  margin: 0;
+}
+#cards article.card input[type=text] {
+  background-color: white;
+  margin: 0;
+}
+#content label {
+  font-weight: normal;
+}
+#content > form {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 20em;
+  border: 1px solid #d2afe7;
+}
+#content > form .error {
+  font-weight: bold;
+  color: #ff3333;
+}
+#content > form input {
+  background-color: white;
+}
+
+@media (max-width: 40em) {
+  #cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**
+ * Overide milligram colors
+ * Some styles might be missing
+ **/
+
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+  border-color: white;
+}
+
+.square{
+  width: 1200px;
+  height: 400px;
+  background-color: white;
+}
+
+.square2{
+  width: 1200px;
+  height: 50px;
+  background-color: #106CFC;
+}
+
+.lol{
+  text-align: center;
+  font-size: 25px;
+  color: #000000;
+  display:inline-block;
+  width:160px;
+  height:50px;
+  background-color: #106CFC;
+  border:1px solid #000000;
+}
+
+/*uiuiuiuiui+*/
+body {
+  background-color: #f9f9fa
+}
+
+.padding {
+  padding: 3rem !important
+}
+
+.user-card-full {
+  overflow: hidden
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  border: none;
+  margin-bottom: 30px
+}
+
+.m-r-0 {
+  margin-right: 0px
+}
+
+.m-l-0 {
+  margin-left: 0px
+}
+
+.user-card-full .user-profile {
+  border-radius: 5px 0 0 5px
+}
+
+.bg-c-lite-green {
+  background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
+  background: linear-gradient(to right, #ee5a6f, #f29263)
+}
+
+.user-profile {
+  padding: 20px 0
+}
+
+.card-block {
+  padding: 1.25rem
+}
+
+.m-b-25 {
+  margin-bottom: 25px
+}
+
+.img-radius {
+  border-radius: 5px
+}
+
+h6 {
+  font-size: 14px
+}
+
+.card .card-block p {
+  line-height: 25px
+}
+
+@media only screen and (min-width: 1400px) {
+  p {
+      font-size: 14px
+  }
+}
+
+.card-block {
+  padding: 1.25rem
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0
+}
+
+.m-b-20 {
+  margin-bottom: 20px
+}
+
+.p-b-5 {
+  padding-bottom: 5px !important
+}
+
+.card .card-block p {
+  line-height: 25px
+}
+
+.m-b-10 {
+  margin-bottom: 10px
+}
+
+.text-muted {
+  color: #919aa3 !important
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0
+}
+
+.f-w-600 {
+  font-weight: 600
+}
+
+.m-b-20 {
+  margin-bottom: 20px
+}
+
+.m-t-40 {
+  margin-top: 20px
+}
+
+.p-b-5 {
+  padding-bottom: 5px !important
+}
+
+.m-b-10 {
+  margin-bottom: 10px
+}
+
+.m-t-40 {
+  margin-top: 20px
+}
+
+.user-card-full .social-link li {
+  display: inline-block
+}
+
+.user-card-full .social-link li a {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out
+}
+
