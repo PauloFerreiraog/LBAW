@@ -1,7 +1,10 @@
 # lbaw2183
 **SOCIAL NETWORK**
 
-O objetivo principal desse projeto é criação de um programa web semelhante a uma rede social onde um usuário pode interagir usando posts, mensagens diretas ou posts em grupos. 
+The objective of this project was the creation of a web program similar to a Social Network where a user can post and interct with posts, message other users or post in Groups.
+
+
+
 
 Programming Languages: PHP, HTML, JS, CSS
 
