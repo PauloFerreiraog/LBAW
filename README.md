@@ -3,6 +3,8 @@
 
 O objetivo principal desse projeto é criação de um programa web semelhante a uma rede social onde um usuário pode interagir usando posts, mensagens diretas ou posts em grupos. 
 
+Programming Languages: PHP, HTML, JS, CSS
+
 Project Video Demo: https://youtu.be/msSi0tIFyBo
 
 For Full Proejct details check the Wiki
